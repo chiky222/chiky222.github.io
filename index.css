@@ -394,19 +394,25 @@ footer{
 
 .videoswork{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
     width: 99%;
+    object-fit: cover;
+}
+
+.videositemgal:nth-child(15){
+    grid-column-start: span 2;
 }
 
 .videoswork video{
     margin: 0;
     padding: 0;
-    width: 24.9vw;
     align-items: center;
-    position: relative;
+    justify-content: center;
     overflow: hidden;
+    width: 100%;
+    object-fit: cover;
 }
 
 @keyframes opening-logo{
@@ -443,15 +449,6 @@ footer{
         overflow: hidden;
         height: 400px;
     }
-
-    .videoswork{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .videoswork video{
-        width: 33.2vw;
-    }
-
 }
 @media (max-width: 1280px){
     .main-video{
