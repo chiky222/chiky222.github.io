@@ -496,10 +496,6 @@ footer{
     .videoswork{
         grid-template-columns: 1fr 1fr;
     }
-
-    .videoswork video{
-        width: 50vw;
-    }
 }
 @media (max-width: 800px){
     .main-video{
